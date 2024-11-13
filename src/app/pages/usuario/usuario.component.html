@@ -1,0 +1,55 @@
+<div class="container">
+    <h1>Usuario <small>Crear o Editar Usuario</small></h1>
+    <hr>
+<div class="row text-right">
+     <div class="col">            
+            <button class="btn btn-danger" routerLink="/admin-panel/usuarios"><i class="fas fa-arrow-left"></i> Regresar</button>
+     </div>   
+</div>
+
+<div class="row  animate__animated animate__fadeIn">
+    <div class="col">
+        <form >
+            <div class="form-group">
+                <label>Firebase ID</label>
+                <input  name="id" type="text" class="form-control" placeholder="Firebase ID" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input  name="nombre" type="text" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input name="email" type="email" class="form-control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+    <input type="password" id="password" class="form-control" name="password" placeholder="Ingrese una contraseña">
+              
+            </div>
+            <div class="form-group">
+                <label for="encryptedPassword">Contraseña (encriptada):</label>
+                <input type="text" id="encryptedPassword" class="form-control" value="" disabled>
+            
+    
+                <label for="newPassword">Nueva Contraseña (opcional):</label>
+                <input type="password" id="newPassword" class="form-control" name="newPassword" placeholder="Ingrese una nueva contraseña">
+              
+            </div>
+            <div class="form-group">
+                <label>Estado</label><br>
+                <button class="btn btn-success w-50">Activo</button>
+                <button class="btn btn-danger w-50">Inactivo</button>                
+            </div>
+            <hr>
+            <div class="form-group text-center">
+            <button class="btn btn-primary w-25" type="submit" ><i class="fas fa-save"></i> Guardar</button> 
+            </div>   
+        </form>
+    </div>
+</div>
+
+
+
+
+</div>
